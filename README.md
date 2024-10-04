@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository**
 
    ```bash
-    git clone
+    git clone https://github.com/vladlearns/playwright-rpg-test.git
     ```
 
 ### Install Dependencies
