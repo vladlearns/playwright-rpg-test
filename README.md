@@ -1,7 +1,7 @@
 
 # Automated Testing with Playwright and TypeScript for the RPG Game
 
-This repository contains an automated test suite for the RPG game application hosted at [https://test-rpg.vercel.app/play](https://test-rpg.vercel.app/play). The tests are written in TypeScript using the Playwright testing framework. The primary test automates the process of logging in, creating a character named "Knight," leveling up, and reaching the highest level in the game.
+This repository contains an automated test suite for the RPG game application [https://github.com/marcelblijleven/testrpg](https://github.com/marcelblijleven/testrpg) hosted at [https://test-rpg.vercel.app/play](https://test-rpg.vercel.app/play). The tests are written in TypeScript using the Playwright testing framework. The primary test automates the process of logging in, creating a character named "Knight," leveling up, and reaching the highest level in the game.
 
 ---
 
@@ -11,8 +11,6 @@ This repository contains an automated test suite for the RPG game application ho
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Running the Tests](#running-the-tests)
-
-
 
 ---
 
@@ -65,7 +63,6 @@ MAX_LEVEL: (Optional) The maximum level to reach. Default is 5.
 
 BASE_URL: (Optional) The base URL of the application. Default is <https://test-rpg.vercel.app/>.
 
-Setting Environment Variables Locally
 Create a .env file in the root directory of the project:
 
 ```env
