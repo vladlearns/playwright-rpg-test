@@ -28,9 +28,6 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: List Installed Browsers
-        run: npx playwright show-browsers
-
       - name: Run Playwright Tests
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
