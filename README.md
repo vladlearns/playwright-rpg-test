@@ -96,8 +96,11 @@ npx playwright test --project=chromium
 Available browser options are:
 
 chromium
+
 firefox
+
 webkit
+
 Viewing the Test Report
 After running the tests, you can generate and view the HTML report:
 
