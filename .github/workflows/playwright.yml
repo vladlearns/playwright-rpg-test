@@ -37,9 +37,7 @@ jobs:
           MAX_LEVEL: 5
           CI: true
         run: |
-          # npx playwright test --project=chromium --project=firefox --project=webkit
-          npx playwright test --project=firefox
-
+          npx playwright test --project=chromium --project=webkit
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
