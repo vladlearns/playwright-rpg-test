@@ -28,6 +28,9 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: List Installed Browsers
+        run: npx playwright show-browsers
+
       - name: Run Playwright Tests
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
@@ -36,7 +39,8 @@ jobs:
           BUILDS: Knight
           MAX_LEVEL: 5
           CI: true
-        run: npx playwright test
+        run: |
+          npx playwright test --project=chromium --project=firefox --project=webkit --reporter=verbose
 
       - name: Upload Playwright Report
         if: always()
@@ -44,3 +48,14 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
+
+      - name: Upload Playwright Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-artifacts
+          path: |
+            playwright-report/
+            test-results/
+            screenshots/
+            videos/
