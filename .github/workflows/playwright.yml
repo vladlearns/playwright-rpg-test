@@ -37,7 +37,7 @@ jobs:
           MAX_LEVEL: 5
           CI: true
         run: |
-          npx playwright test --project=chromium --project=firefox --project=webkit --reporter=verbose
+          npx playwright test --project=chromium --project=firefox --project=webkit
 
       - name: Upload Playwright Report
         if: always()
