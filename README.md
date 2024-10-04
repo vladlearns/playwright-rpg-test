@@ -20,7 +20,7 @@ This repository contains an automated test suite for the RPG game application ho
 
 Before you begin, ensure you have met the following requirements:
 
-- **Node.js**: Version 20 or higher.
+- **Node.js**: Version 22 or higher.
 
 ---
 
