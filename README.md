@@ -24,11 +24,11 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
-1. **Clone the Repository**
+### Clone the Repository
 
-   ```bash
-    git clone https://github.com/vladlearns/playwright-rpg-test.git
-    ```
+```bash
+git clone https://github.com/vladlearns/playwright-rpg-test.git
+```
 
 ### Install Dependencies
 
@@ -53,15 +53,11 @@ The tests are configurable using environment variables. These variables allow yo
 
 ### Available Environment Variables
 
-TEST_TIMEOUT: (Optional) The timeout for each test in milliseconds. Default is 300000 (5 minutes).
-
-MAX_LEVEL_UPS: (Optional) The maximum number of level-up attempts. Default is 20.
-
-BUILDS: (Optional) A comma-separated list of character builds to test. Default is Knight.
-
-MAX_LEVEL: (Optional) The maximum level to reach. Default is 5.
-
-BASE_URL: (Optional) The base URL of the application. Default is <https://test-rpg.vercel.app/>.
+* TEST_TIMEOUT: (Optional) The timeout for each test in milliseconds. Default is 300000 (5 minutes).
+* MAX_LEVEL_UPS: (Optional) The maximum number of level-up attempts. Default is 20.
+* BUILDS: (Optional) A comma-separated list of character builds to test. Default is Knight.
+* MAX_LEVEL: (Optional) The maximum level to reach. Default is 5.
+* BASE_URL: (Optional) The base URL of the application. Default is <https://test-rpg.vercel.app/>.
 
 Create a .env file in the root directory of the project:
 
@@ -92,11 +88,9 @@ npx playwright test --project=chromium
 
 Available browser options are:
 
-chromium
-
-firefox
-
-webkit
+* chromium
+* firefox
+* webkit
 
 Viewing the Test Report
 After running the tests, you can generate and view the HTML report:
